@@ -31,3 +31,45 @@ p
 a{ color:#8A2BE2;
         text-decoration: none;
       }
+
+      /* Header */
+header {
+    width: 100vw; /* Breedte van het hele scherm */
+    min-height: 33vh; /* Minimale hoogte van 1/3 van het scherm */
+    background-image: url('img/Video.jpg'); /* Achtergrondafbeelding */
+    background-size: cover; /* Afbeelding moet de volledige breedte en hoogte bedekken */
+    background-repeat: no-repeat; /* Afbeelding mag zichzelf niet herhalen */
+    background-position: center; /* Afbeelding gecentreerd */
+  
+    /* Tekstkleuren aanpassen voor betere leesbaarheid */
+    color: white; /* Tekstkleur in de header */
+  }
+  
+  header h1, header p {
+    color: blue; /* Kleur van de h1 en p aanpassen */
+  }
+  
+  /* Afbeeldingen */
+  img {
+    width: 50vw; /* Breedte van de helft van het scherm */
+  }
+  
+  /* Articles */
+  article {
+    border: 2px solid gray; /* Border met kleur naar keuze en grootte */
+    border-radius: 50px; /* Ronde hoeken voor de border */
+    padding: 20px; /* Ruimte binnen de border */
+    margin: 20px 0; /* Ruimte tussen de articles */
+    position: relative; /* Voor het toevoegen van de lijn aan de linkerkant */
+  }
+  
+  /* Lijn aan de linkerkant van het article */
+  article::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -10px; /* Afstand van de linkerzijde */
+    width: 10px; /* Dikte van de lijn */
+    height: 100%; /* Volledige hoogte van het article */
+    background-color: #ff5733;; /* Kleur van de lijn */
+  }
