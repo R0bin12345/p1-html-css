@@ -39,5 +39,69 @@ nav img {
 }
 
 body {
+  background-image:url("img/hacker.png");
+ background-size:cover;
+  background-color: black;
+  background-repeat: no-repeat;
+  font-family: 'Goldman', sans-serif;
+  overflow: auto;
+}
+
+section {
+  width:;
+  height: calc(); 
+  background-color: black; 
+}
+
+nav {
+  height:;}
+footer {
+  background-color: #00a8c7; 
+  height:auto; 
+}
+ul li a {
+  font-weight: bold; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Goldman", cursive;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  background: #00a8c7;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+nav li {
+  font-size: 2.5rem;
+  padding: 0 4rem 0 4rem;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav img {
+  width: 5vw;
+}
+
+body {
   background-image:url("background.jpeg");
 }
