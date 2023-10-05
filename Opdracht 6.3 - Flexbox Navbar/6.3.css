@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+}
+
+.logo {
+    flex: 1; /* Logo krijgt een kwart van de ruimte */
+    color: blue;
+    font-size: 20px;
+}
+
+nav {
+    flex: 2; /* Navigatie krijgt de helft van de ruimte */
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%; /* Voorkomt dat de navigatie-elementen overlappen */
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.login {
+    flex: 1; /* Login krijgt een kwart van de ruimte */
+    text-align: right;
+    color: blue;
+}
