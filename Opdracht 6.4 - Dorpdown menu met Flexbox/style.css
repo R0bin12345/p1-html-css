@@ -1,0 +1,279 @@
+body {
+
+  background-color: black;
+
+  font-family: 'Goldman', sans-serif;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height:200vh;
+
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Make the body element a reference for absolutely positioned children */
+  margin: 0;
+  padding: 3;
+  
+  .container {
+    display: flex;
+    align-items: flex-start; /* Verticaal uitlijnen aan de bovenkant */
+    padding: 20px;
+}
+
+.tekst {
+    flex: 1; /* Laat de tekst de beschikbare ruimte innemen */
+}
+
+.afbeelding1 {
+    flex: 1; /* Laat de afbeelding de beschikbare ruimte innemen */
+    text-align: left; /* Tekst aan de linkerkant uitlijnen */
+    width: 10vw; /* Pas de breedte van de afbeelding aan zoals gewenst */
+    height: auto; /* Behoud de aspectverhouding van de afbeelding */
+}
+}
+
+ 
+
+header {
+
+  background-color: #00a8c7;
+
+  color: white;
+
+  position: fixed;
+
+  text-align: center;
+
+  margin: 0;
+
+  padding: 0;
+
+  width: 100vw;
+
+  /* Hoogte van de navigatiebalk */
+
+  height: 6vh;
+
+  /* Andere stijlregels voor de header */
+
+}
+
+ 
+
+nav {
+
+  /* Stijlregels voor de navigatie-elementen */
+
+  margin-left: 1vw;
+
+  list-style-type: none;
+
+  padding-left: 1vw;
+
+  padding-right: 1vw;
+
+  padding-top: 1vh;
+
+  padding-bottom: 1vh;
+
+  width: 90vw;
+
+  overflow: hidden;
+
+}
+
+ 
+
+.logo {
+
+  float: left;
+
+  width: 3vw;
+
+  height: 4vh;
+
+}
+
+ 
+
+li {
+
+  float: right;
+
+}
+
+ 
+
+li a {
+
+  display: block;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 14px 16px;
+
+  text-decoration: none;
+
+}
+
+ 
+
+li a:hover {
+
+  background-color: white;
+  color:#00a8c7;
+
+
+}
+
+ 
+
+main {
+
+  display: flex;
+
+  flex-direction: column;
+
+  /*align-items:left;*/
+
+  justify-content: center;
+
+ background-image:url("img/background.jpeg");
+ background-size:cover;
+
+  height: calc(100vh - 10vh); /* Hoogte van scherm minus navigatiebalk */
+
+  background-color:black
+  flex: 1; /* Hiermee wordt de hoofdinhoud uitgerekt om de beschikbare ruimte in te nemen */
+}
+
+
+
+ 
+
+section {
+
+  width: 100%;
+
+  height: calc(100vh - 60px); /* Hoogte van scherm minus navigatiebalk */
+
+  color: white;
+
+  font-weight: normal; /* Dikgedrukte tekst */
+
+  /* Andere stijlregels voor de secties */
+
+}
+
+ 
+
+footer {
+  position: absolute;
+    bottom: 0;
+
+  background-color: #00a8c7; /* Dezelfde kleur als navigatiebalk */
+
+  color: white;
+
+  text-align: center;
+
+  /* Hoogte van de footer berekenen (bijvoorbeeld 30px) */
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Make the body element a reference for absolutely positioned children */
+  margin: 0;
+  padding: 0;
+
+  
+
+  /* Andere stijlregels voor de footer */
+  
+
+}
+
+ .afb{
+  float: left;
+  height: auto;
+  width: 100vw;
+ }
+
+ h1{text-align: center
+  ;}
+
+h2{text-align: left;}
+
+
+ul {
+  list-style: none;
+}
+
+/* Dropdown Container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #00a8c7;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  height: 0.4vh;
+  display: flex;
+  align-items: center; /* Verticaal centreren van inhoud */
+  justify-content: space-between; /* Ruimte tussen tekst en pijlsymbool */
+  cursor: pointer; /* Wijzig de cursor naar een handje om aan te geven dat het klikbaar is */
+  transition: background-color 0.3s, color 0.3s; /* Soepele overgangseffecten */
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background-color: #E9E9E9;
+  min-width: 160px;
+  
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%; /* Plaats het dropdown-menu onder de dropdown-knop */
+  left: 0; /* Plaats het dropdown-menu aan de linkerkant van de dropdown-knop */
+  right: 0; /* Zorg ervoor dat de breedte van het dropdown-menu hetzelfde is als de knop */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: #00a8c7;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #E9E9E9;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #E9E9E9;
+  color: #00a8c7;
+}
+
+
+@media (max-width: 768px) {
+  /* CSS-regels voor schermen met een maximale breedte van 768px */
+}
