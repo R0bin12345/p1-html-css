@@ -1,0 +1,151 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: red;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text-box {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .text-box {
+    text-align: center;
+  }
+
+  .navbar {
+    background-color: rgb(91, 121, 150);
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+
+  .navbar .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .navbar .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003b62;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .navbar .dropdown-content li {
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  .text-box.box1 {
+    background-color: mediumturquoise;
+  }
+
+  .text-box.box2 {
+    background-color: magenta;
+  }
+
+  .text-box.box3 {
+    background-color: navy;
+  }
+
+
+  .navbar ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: white;
+  }
+
+  .navbar ul li {
+    display: inline;
+  }
+  .navbar .dropdown {
+    display: none;
+  }
+
+  .text-box.box1 {
+    background-color: rgb(233, 86, 86);
+  }
+
+  .text-box.box2 {
+    background-color: rgb(77, 175, 221);
+  }
+
+  .text-box.box3 {
+    background-color: rgb(78, 81, 136);
+  }
+  .navbar {
+    background-color: rgb(189, 114, 114);
+  }
+
+  .navbar ul {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar ul li {
+    display: inline;
+  }
+  .navbar .dropdown {
+    display: none;
+  }
+
+  .text-box.box1 {
+    background-color: #FFD700;
+  }
+  .text-box.box2 {
+    background-color: #FFA500;
+  }
+  .text-box.box3 {
+    background-color: green;
+  }
+}
