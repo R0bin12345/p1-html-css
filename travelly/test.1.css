@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+ 
+.background-section {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+ 
+ 
+#section1 {
+    background-image: url('landing-page.jpg');
+}
+ 
+#section2 {
+    background-image: url('new-york-page.png');
+}
+ 
+#section3 {
+    background-image: url('contact-mountain.png');
+}
+ 
+.content {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+}
+ 
+/* Media queries for responsiveness */
+@media screen and (max-width: 767px) {
+    .content {
+        padding: 10px;
+    }
+}
+ 
+ 
+ 
+ 
+.navbar {
+    background-color: #022841;
+    color: #fff;
+    padding: 10px 0;
+  }
+ 
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .navbar li {
+    margin: 0 10px;
+  }
+   
+  .navbar a {
+    text-decoration: none;
+    color: #fff;
+  }
+ 
+ 
+ 
+ 
+ 
+  .Boek {
+    background-color: #15659a;
+    text-align: center; /* Gecentreerde tekst */
+    color: #fff;
+  }
+ 
+  .Box {
+    background-color: lightgrey;
+    width: 250px;
+    height: 300px;
+    border-top: 100px solid;
+    padding: 50px;
+    margin: 20px;
+    border-top-color: #022841;
+    color: black;
+    position: relative;
+    
+  }
+  .TopBox{
+    background-color: #022841;
+    width: 100%;
+    height: 150px;
+   
+   
+  }
+ 
+#footer{background-color: #022841;
+  width: 100%;
+  height: 80px;
+  padding-top: 10px;
+  margin: 0;
+  color: #fff;
+   
+}
+ 
+ 
+.cd{ float: right;
+  display: flex;
+  justify-content: space-between;}
+.cd-item { margin-right: 100px;}
+ 
+.bob{color: black;}
+ 
+.horizontal-bar{
+background-color: #022841;
+width: 100%;
+height: 150px;
+color: #fff;
+text-align: center;}
+
+.form-container {
+  background-color: rgba(39, 36, 36, 0.76); /* Semi-transparent white background */
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+ 
+input[type="text"], input[type="email"] {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+ 
+ button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;}
+
+ #Travelly{
+        
+         /* Afstand vanaf de bovenkant van de pagina */
+        margin-right: 1200px; /* Afstand vanaf de rechterkant van de pagina */
+        color: #FFF; /* Tekstkleur (aanpassen indien nodig) */
+    }
+    .box-image {
+        position: absolute;
+        top: -80px; /* Adjust the top position to place the image as desired */
+        left: 130px;
+        width: 20%; /* Ensure the image spans the width of the box */
+    }
+/* Voeg deze CSS-code toe aan je bestaande CSS-bestand na de huidige stijlen */
+
+@media screen and (max-width: 767px) {
+    .Box {
+        width: 100%; /* Zorg ervoor dat de breedte 100% is, zodat de elementen onder elkaar worden weergegeven */
+        height: auto; /* Stel de hoogte in op 'auto' om inhoudsafhankelijke hoogte te hebben */
+        border-top: 0; /* Verwijder de bovenste rand om de vorm van de Box aan te passen */
+        padding: 20px; /* Pas de padding aan om voldoende ruimte te hebben voor de inhoud */
+        margin: 20px 0; /* Voeg verticale marges toe voor tussenruimte tussen de Box-elementen */
+        position: static; /* Verwijder de 'absolute' positionering */
+    }
+}
+
+/* Optioneel: Media-query voor schermen met een minimale breedte van 768px (desktop) om de oorspronkelijke stijl te herstellen */
+@media screen and (min-width: 768px) {
+    .Box {
+        width: 250px;
+        height: auto; /* Stel de hoogte in op 'auto' om de inhoudsafhankelijke hoogte te hebben */
+        border-top: 100px solid;
+        padding: 50px;
+        margin: 20px;
+        position: relative;
+    }
+}
