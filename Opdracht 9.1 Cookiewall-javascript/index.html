@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fake Cookiewall</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <button id="showCookiewall">Toon Cookiewall</button>
+
+    <div id="cookiewallModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCookiewall">&times;</span>
+            <h2>Leeftijd verificatie</h2>
+            <p>Geef je leeftijd op:</p>
+            <input type="number" id="ageInput">
+            <button id="verifyAge">Verifieer</button>
+        </div>
+    </div>
+
+    <div id="underageMessage" class="modal">
+        <div class="modal-content">
+            <h2>Helaas, je bent te jong</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
