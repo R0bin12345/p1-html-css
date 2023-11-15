@@ -1,0 +1,15 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.Monkey {
+    font-size: 1000%;
+}
+
+#closed {
+    display: none;
+}
